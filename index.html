@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISLAMIC GOOGLE — Created by SULEIMAN ALHASSAN</title>
+<meta name="description" content="ISLAMIC GOOGLE: Search authentic Islamic resources — Qur'an, Hadith, Lectures, Books, and History.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><img src="assets/logo.svg" alt="ISLAMIC GOOGLE logo"></div>
+    <h1>ISLAMIC GOOGLE</h1>
+    <nav>
+      <a href="quran.html">Qur'an</a>
+      <a href="hadith.html">Hadith</a>
+      <a href="lectures.html">Lectures</a>
+      <a href="books.html">Books</a>
+      <a href="history.html">History</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p style="color:#345; margin:6px 0 18px 0">Search trusted Islamic resources — verses, hadith, lectures, books, and articles.</p>
+
+    <form id="searchForm" class="searchbox" onsubmit="return false" role="search">
+      <input id="q" type="search" placeholder="Type keywords (e.g., 'Islamic history', 'Prophet Muhammad', 'Hadith on prayer')">
+      <button type="submit">Search</button>
+    </form>
+
+    <div style="display:flex; gap:16px; align-items:flex-start" class="grid-2">
+      <div>
+        <div style="display:flex; gap:8px; margin-bottom:10px;">
+          <button data-cat="Qur'an" class="category-badge">Qur'an</button>
+          <button data-cat="Hadith" class="category-badge">Hadith</button>
+          <button data-cat="Lecture" class="category-badge">Lectures</button>
+          <button data-cat="Book" class="category-badge">Books</button>
+          <button data-cat="History" class="category-badge">History</button>
+        </div>
+        <div id="results" class="results">
+          <div class="result-card"><p>Type a search term above or click a category to see results.</p></div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Featured Lectures</h3>
+          <iframe class="media-embed" src="https://www.youtube.com/embed/m9xcwWBwXkc" title="Mufti Menk" frameborder="0" allowfullscreen></iframe>
+          <p style="margin:6px 0 0 0"><a href="lectures.html">Browse all lectures</a></p>
+        </div>
+        <div style="height:12px"></div>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <ul style="padding-left:18px; margin:0 0 0 0">
+            <li><a href="https://quran.com" target="_blank">Quran.com</a></li>
+            <li><a href="https://sunnah.com" target="_blank">Sunnah.com</a></li>
+            <li><a href="https://archive.org" target="_blank">Archive.org</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div>CREATED BY <strong>SULEIMAN ALHASSAN</strong></div>
+    <div>May Allah accept this sadaqah jariyah</div>
+  </footer>
+</div>
+
+<script src="js/search.js"></script>
+<script>
+// visitor notification via Getform
+(function(){
+  var ENDPOINT = "https://getform.io/f/akkpdyla";
+  var payload = { _subject: "Islamic Google - Visitor", page: location.pathname, ts: new Date().toISOString() };
+  try{
+    var last = localStorage.getItem('ig_last_notify') || 0;
+    var now = Date.now();
+    if(!last || (now - parseInt(last)) > (10*60*1000)){
+      fetch(ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)})
+        .then(function(){ localStorage.setItem('ig_last_notify', now.toString()); })
+        .catch(function(){});
+    }
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
