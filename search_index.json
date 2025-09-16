@@ -1,0 +1,346 @@
+[
+  {
+    "title": "Qur'an - Surah Al-Fatiha (English)",
+    "description": "Read the Qur'an online with translations on Quran.com.",
+    "url": "https://quran.com/1",
+    "type": "Qur'an",
+    "source": "Quran.com",
+    "tags": [
+      "quran",
+      "surah",
+      "fatiha",
+      "translate"
+    ]
+  },
+  {
+    "title": "Qur'an - Search / Read (Quran.com)",
+    "description": "Search the Qur'an text, translations and tafsir on Quran.com.",
+    "url": "https://quran.com",
+    "type": "Qur'an",
+    "source": "Quran.com",
+    "tags": [
+      "quran",
+      "search",
+      "tafsir"
+    ]
+  },
+  {
+    "title": "Sahih al\u2011Bukhari \u2014 Hadith Collection",
+    "description": "Trusted hadith collection available on Sunnah.com",
+    "url": "https://sunnah.com/bukhari",
+    "type": "Hadith",
+    "source": "Sunnah.com",
+    "tags": [
+      "hadith",
+      "bukhari",
+      "sunnah"
+    ]
+  },
+  {
+    "title": "Riyadh as\u2011Saliheen (e\u2011book)",
+    "description": "A widely-used collection of hadith for practical guidance.",
+    "url": "https://archive.org/search.php?query=Riyadh%20as-Saliheen",
+    "type": "Book",
+    "source": "Archive.org",
+    "tags": [
+      "book",
+      "riyadh",
+      "hadith"
+    ]
+  },
+  {
+    "title": "The Sealed Nectar (life of the Prophet \ufdfa)",
+    "description": "A biography of the Prophet Muhammad (peace be upon him).",
+    "url": "https://archive.org/search.php?query=The+Sealed+Nectar",
+    "type": "Book",
+    "source": "Archive.org",
+    "tags": [
+      "biography",
+      "seerah"
+    ]
+  },
+  {
+    "title": "Hisnul Muslim (Fortress of the Muslim)",
+    "description": "A short book of daily supplications and duas.",
+    "url": "https://www.alim.org/library/books/hisn-al-muslim",
+    "type": "Book",
+    "source": "Alim.org",
+    "tags": [
+      "dua",
+      "supplication",
+      "hisnul"
+    ]
+  },
+  {
+    "title": "Mufti Menk \u2014 Reminder Lecture",
+    "description": "Short uplifting lecture by Mufti Menk.",
+    "url": "https://www.youtube.com/watch?v=m9xcwWBwXkc",
+    "type": "Lecture",
+    "source": "YouTube",
+    "videoId": "m9xcwWBwXkc",
+    "tags": [
+      "mufti menk",
+      "lecture",
+      "reminder"
+    ]
+  },
+  {
+    "title": "Nouman Ali Khan \u2014 Importance of Quran",
+    "description": "Lecture about reflection on the Qur'an.",
+    "url": "https://www.youtube.com/watch?v=_7WjdRTCv6I",
+    "type": "Lecture",
+    "source": "YouTube",
+    "videoId": "_7WjdRTCv6I",
+    "tags": [
+      "nouman",
+      "quran"
+    ]
+  },
+  {
+    "title": "Omar Suleiman \u2014 Mercy of the Prophet \ufdfa",
+    "description": "Lecture on the mercy and character of the Prophet.",
+    "url": "https://www.youtube.com/watch?v=1UJk3GXyQK0",
+    "type": "Lecture",
+    "source": "YouTube",
+    "videoId": "1UJk3GXyQK0",
+    "tags": [
+      "omar suleiman",
+      "seerah"
+    ]
+  },
+  {
+    "title": "Yasir Qadhi \u2014 Islamic History Overview",
+    "description": "Lecture covering early Islamic history.",
+    "url": "https://www.youtube.com/watch?v=JWZLbnfS3h8",
+    "type": "Lecture",
+    "source": "YouTube",
+    "videoId": "JWZLbnfS3h8",
+    "tags": [
+      "yasir qadhi",
+      "history"
+    ]
+  },
+  {
+    "title": "Islam QA - Questions & Answers",
+    "description": "Scholarly answers to fiqh and creed questions.",
+    "url": "https://islamqa.info/en/",
+    "type": "Article",
+    "source": "IslamQA",
+    "tags": [
+      "fatwa",
+      "islamqa",
+      "questions"
+    ]
+  },
+  {
+    "title": "IslamWeb - Articles and Resources",
+    "description": "Articles, tafsir and resources for learning Islam.",
+    "url": "https://www.islamweb.net/en/",
+    "type": "Article",
+    "source": "IslamWeb",
+    "tags": [
+      "articles",
+      "tafsir",
+      "islamweb"
+    ]
+  },
+  {
+    "title": "Kalamullah - Free Islamic books",
+    "description": "Huge library of downloadable Islamic books.",
+    "url": "https://kalamullah.com/",
+    "type": "Book",
+    "source": "Kalamullah",
+    "tags": [
+      "books",
+      "download"
+    ]
+  },
+  {
+    "title": "Sunnah.com - Hadith Search",
+    "description": "Search sahih collections like Bukhari and Muslim.",
+    "url": "https://sunnah.com/",
+    "type": "Hadith",
+    "source": "Sunnah.com",
+    "tags": [
+      "hadith",
+      "search"
+    ]
+  },
+  {
+    "title": "Understanding Seerah (History) - Overview",
+    "description": "Articles and reliable sources about the life of the Prophet \ufdfa.",
+    "url": "https://www.britannica.com/biography/Muhammad",
+    "type": "History",
+    "source": "Encyclopaedia",
+    "tags": [
+      "seerah",
+      "history",
+      "prophet"
+    ]
+  },
+  {
+    "title": "Yaqeen Institute - Articles & Research",
+    "description": "Research articles on Islam and current issues.",
+    "url": "https://yaqeeninstitute.org/read/",
+    "type": "Article",
+    "source": "Yaqeen Institute",
+    "tags": [
+      "research",
+      "yaqeen"
+    ]
+  },
+  {
+    "title": "Archive.org - Islamic Books Collection",
+    "description": "Searchable collection of scanned books and resources.",
+    "url": "https://archive.org/search.php?query=Islamic+books",
+    "type": "Book",
+    "source": "Archive.org",
+    "tags": [
+      "archive",
+      "books"
+    ]
+  },
+  {
+    "title": "Quran English Translation (quran.com) - Search verses by keywords",
+    "description": "Find verses by keywords and read translations.",
+    "url": "https://quran.com/search",
+    "type": "Qur'an",
+    "source": "Quran.com",
+    "tags": [
+      "search",
+      "verses"
+    ]
+  },
+  {
+    "title": "Hadith: Sahih Muslim Collection",
+    "description": "Sahih Muslim collection available online.",
+    "url": "https://sunnah.com/muslim",
+    "type": "Hadith",
+    "source": "Sunnah.com",
+    "tags": [
+      "muslim",
+      "hadith"
+    ]
+  },
+  {
+    "title": "Islamic History - Early Caliphate Overview",
+    "description": "Overview of the Rashidun Caliphate and major events.",
+    "url": "https://en.wikipedia.org/wiki/Rashidun_Caliphate",
+    "type": "History",
+    "source": "Wikipedia",
+    "tags": [
+      "caliphate",
+      "history",
+      "rashidun"
+    ]
+  },
+  {
+    "title": "Lectures - Helpful Playlists (YouTube)",
+    "description": "Playlists of lectures from trusted scholars.",
+    "url": "https://www.youtube.com/results?search_query=islamic+lectures+playlist",
+    "type": "Lecture",
+    "source": "YouTube",
+    "tags": [
+      "playlist",
+      "lectures"
+    ]
+  },
+  {
+    "title": "Hadith Portal - translations and explanations",
+    "description": "Collections with translation and explanation for learners.",
+    "url": "https://sunnah.com/",
+    "type": "Hadith",
+    "source": "Sunnah.com",
+    "tags": [
+      "hadith",
+      "translation"
+    ]
+  },
+  {
+    "title": "Islamic Etiquettes & Morals - Articles",
+    "description": "Guides on good character and Islamic manners.",
+    "url": "https://productivemuslim.com/category/spiritual-growth/",
+    "type": "Article",
+    "source": "ProductiveMuslim",
+    "tags": [
+      "adab",
+      "manners",
+      "character"
+    ]
+  },
+  {
+    "title": "Children's Islamic Stories and Education",
+    "description": "Resources for teaching children about Islam.",
+    "url": "https://muslimchildrenmagazine.wordpress.com/",
+    "type": "Article",
+    "source": "Children Resources",
+    "tags": [
+      "children",
+      "stories"
+    ]
+  },
+  {
+    "title": "Duas and Supplications (Hisnul Muslim)",
+    "description": "Daily duas and supplications reference.",
+    "url": "https://www.alim.org/library/books/hisn-al-muslim",
+    "type": "Book",
+    "source": "Alim.org",
+    "tags": [
+      "duas",
+      "supplication"
+    ]
+  },
+  {
+    "title": "Seerah (Prophetic Biography) - Online Resources",
+    "description": "Collections of authentic seerah works and articles.",
+    "url": "https://www.sirahfinder.com/",
+    "type": "History",
+    "source": "SirahFinder",
+    "tags": [
+      "seerah",
+      "biography"
+    ]
+  },
+  {
+    "title": "Hadith - explanation and commentary",
+    "description": "Hadith commentary and explanation resources",
+    "url": "https://sunnah.com/",
+    "type": "Hadith",
+    "source": "Trusted source",
+    "tags": [
+      "hadith",
+      "-",
+      "explanation",
+      "and",
+      "commentary"
+    ]
+  },
+  {
+    "title": "Quran Tafsir - short introductions",
+    "description": "Short tafsir introductions and summaries",
+    "url": "https://quran.com/tafsir",
+    "type": "Qur'an",
+    "source": "Trusted source",
+    "tags": [
+      "quran",
+      "tafsir",
+      "-",
+      "short",
+      "introductions"
+    ]
+  },
+  {
+    "title": "Islamic Finance - basic guides",
+    "description": "Guides about halal finance and zakat",
+    "url": "https://islamqa.info/en/answers/financial",
+    "type": "Article",
+    "source": "Trusted source",
+    "tags": [
+      "islamic",
+      "finance",
+      "-",
+      "basic",
+      "guides"
+    ]
+  }
+]
