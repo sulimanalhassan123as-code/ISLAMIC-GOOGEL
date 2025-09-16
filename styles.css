@@ -1,0 +1,22 @@
+
+:root{--accent:#0a6a4a; --muted:#3b6; --bg:#fbfff9;}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, sans-serif; margin:0; background: #fbfff9 url('assets/islamic-bg.svg'); color:#073;}
+.wrap{max-width:1100px; margin:24px auto; padding:18px; background:rgba(255,255,255,0.95); border-radius:12px; box-shadow:0 6px 20px rgba(3,12,8,0.06)}
+header{display:flex; align-items:center; gap:16px; margin-bottom:18px}
+.logo img{height:64px; width:auto; display:block}
+nav{margin-left:auto}
+nav a{margin-left:12px; text-decoration:none; color:var(--accent); font-weight:700}
+h1{margin:0; color:var(--accent)}
+.searchbox{margin:26px auto; max-width:760px; display:flex; gap:8px}
+.searchbox input[type="search"]{flex:1; padding:14px 16px; font-size:16px; border-radius:8px; border:1px solid #e6f3ef}
+.searchbox button{padding:12px 18px; border-radius:8px; border:none; background:var(--accent); color:white; font-weight:700}
+.results{margin-top:18px; display:grid; gap:14px}
+.result-card{background:#fff; padding:12px; border-radius:10px; border:1px solid #eef6f3; box-shadow:0 8px 18px rgba(3,12,10,0.03)}
+.result-card h3{margin:0 0 6px 0; font-size:18px; color:#064}
+.meta{font-size:13px; color:#4d6; margin-bottom:8px}
+.category-badge{display:inline-block; padding:4px 8px; border-radius:999px; font-size:12px; background:#f0fff5; color:#046; border:1px solid #e6f6ef}
+.grid-2{display:grid; grid-template-columns: 1fr 320px; gap:18px}
+.sidebar .card{padding:12px; border-radius:10px; background:#fff; border:1px solid #eef6f3}
+footer{margin-top:20px; padding-top:12px; border-top:1px dashed #e6f6ef; color:#456; font-size:14px; display:flex; justify-content:space-between; align-items:center}
+@media (max-width:860px){ .grid-2{grid-template-columns:1fr} .searchbox{flex-direction:column} nav{margin-left:0; margin-top:8px} }
