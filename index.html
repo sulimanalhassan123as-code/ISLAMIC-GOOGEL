@@ -3,226 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ISLAMIC GOOGLE — Gateway to Authentic Islamic Knowledge</title>
-  <meta name="description" content="ISLAMIC GOOGLE: Complete hub for Qur'an, Hadith, Islamic lectures, books, and resources from authentic Islamic sources and scholars.">
+  <title>ISLAMIC GOOGLE — Gateway to Islamic Knowledge</title>
+  <meta name="description" content="ISLAMIC GOOGLE: Complete hub for Qur'an, Hadith, Islamic lectures, books, and authentic resources.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Dynamic Logo SVG */
-    .logo-container {
-      position: relative;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .logo-container:hover {
-      transform: scale(1.1);
-    }
-    .logo-svg {
-      width: 70px;
-      height: 70px;
-      filter: drop-shadow(0 4px 8px rgba(10, 106, 74, 0.2));
-    }
-    
-    /* Modal for logo preview */
-    .logo-modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      animation: fadeIn 0.3s ease;
-    }
-    .logo-modal-content {
-      background-color: white;
-      margin: 5% auto;
-      padding: 30px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 400px;
-      text-align: center;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-      animation: slideDown 0.3s ease;
-    }
-    .logo-modal-content svg {
-      width: 200px;
-      height: 200px;
-      margin: 20px 0;
-    }
-    .close-modal {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-    .close-modal:hover {
-      color: #000;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideDown {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    
-    /* 3D Card Effects */
-    .featured-section {
-      background: linear-gradient(135deg, #0a6a4a 0%, #157850 100%);
-      color: white;
-      padding: 24px;
-      border-radius: 12px;
-      margin-bottom: 24px;
-      box-shadow: 0 10px 30px rgba(10, 106, 74, 0.2);
-      perspective: 1000px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .featured-section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(10, 106, 74, 0.3);
-    }
-    .featured-section h2 { margin-top: 0; color: white; }
-    
-    .channels-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 12px;
-      margin-top: 16px;
-    }
-    .channel-card {
-      background: rgba(255,255,255,0.15);
-      padding: 12px;
-      border-radius: 10px;
-      text-align: center;
-      border: 2px solid rgba(255,255,255,0.3);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      transform: translateZ(0);
-      backdrop-filter: blur(10px);
-    }
-    .channel-card:hover {
-      background: rgba(255,255,255,0.25);
-      transform: translateY(-8px) scale(1.05);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      border-color: rgba(255,255,255,0.5);
-    }
-    .channel-card a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      font-weight: 600;
-      font-size: 12px;
-    }
-    
-    /* Video Section */
-    .video-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
-    }
-    .video-card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-      transform: translateZ(0);
-    }
-    .video-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    }
-    .video-card iframe {
-      width: 100%;
-      height: 200px;
-      border: none;
-    }
-    .video-info {
-      padding: 12px;
-      background: linear-gradient(135deg, #f5f5f5 0%, #f9f9f9 100%);
-    }
-    .video-title {
-      margin: 0 0 6px 0;
-      color: #0a6a4a;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .video-link {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 6px 12px;
-      background: #0a6a4a;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    .video-link:hover {
-      background: #157850;
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
 <div class="wrap">
+  <!-- HEADER WITH DYNAMIC LOGO -->
   <header>
-    <div class="logo-container" onclick="openLogoModal()">
+    <div class="logo-container" onclick="openLogoModal()" title="Click to view logo">
       <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <!-- Dynamic Binoculars/Search Icon -->
         <defs>
           <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#0a6a4a;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#157850;stop-opacity:1" />
           </linearGradient>
-          <filter id="logoShadow">
-            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
-          </filter>
+          <filter id="logoShadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" /></filter>
         </defs>
-        <!-- Left Binocular Lens -->
         <circle cx="30" cy="40" r="18" fill="url(#logoGradient)" filter="url(#logoShadow)"/>
         <circle cx="30" cy="40" r="14" fill="none" stroke="white" stroke-width="2"/>
-        <!-- Right Binocular Lens -->
         <circle cx="70" cy="40" r="18" fill="url(#logoGradient)" filter="url(#logoShadow)"/>
         <circle cx="70" cy="40" r="14" fill="none" stroke="white" stroke-width="2"/>
-        <!-- Search Magnifier -->
         <circle cx="85" cy="65" r="12" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
         <line x1="78" y1="72" x2="72" y2="78" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
-        <!-- Islamic Star -->
         <path d="M 50 15 L 56 32 L 74 32 L 60 42 L 65 59 L 50 49 L 35 59 L 40 42 L 26 32 L 44 32 Z" fill="white" opacity="0.9"/>
       </svg>
     </div>
-    <h1>ISLAMIC GOOGLE</h1>
+    <h1>🔍 ISLAMIC GOOGLE</h1>
     <nav>
+      <a href="index.html">Home</a>
       <a href="quran.html">Qur'an</a>
       <a href="hadith.html">Hadith</a>
       <a href="lectures.html">Lectures</a>
       <a href="books.html">Books</a>
       <a href="history.html">History</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Support</a>
     </nav>
   </header>
 
-  <!-- Logo Preview Modal -->
-  <div id="logoModal" class="logo-modal">
-    <div class="logo-modal-content">
+  <!-- LOGO PREVIEW MODAL -->
+  <div id="logoModal" class="logo-modal" onclick="closeLogoModal()">
+    <div class="logo-modal-content" onclick="event.stopPropagation()">
       <span class="close-modal" onclick="closeLogoModal()">&times;</span>
-      <h2>ISLAMIC GOOGLE Logo</h2>
+      <h2>🔍 ISLAMIC GOOGLE Logo</h2>
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#0a6a4a;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#157850;stop-opacity:1" />
           </linearGradient>
-          <filter id="logoShadow2">
-            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
-          </filter>
+          <filter id="logoShadow2"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" /></filter>
         </defs>
         <circle cx="30" cy="40" r="18" fill="url(#logoGradient2)" filter="url(#logoShadow2)"/>
         <circle cx="30" cy="40" r="14" fill="none" stroke="white" stroke-width="2"/>
@@ -232,49 +62,96 @@
         <line x1="78" y1="72" x2="72" y2="78" stroke="url(#logoGradient2)" stroke-width="2" stroke-linecap="round"/>
         <path d="M 50 15 L 56 32 L 74 32 L 60 42 L 65 59 L 50 49 L 35 59 L 40 42 L 26 32 L 44 32 Z" fill="white" opacity="0.9"/>
       </svg>
-      <p style="color: #0a6a4a; margin: 16px 0 0 0;">🔍 Binoculars: Searching for Islamic Knowledge<br>⭐ Star: Islamic Excellence</p>
+      <p style="color: #0a6a4a; margin: 16px 0 0 0; line-height: 1.6;"><strong>🔍 Search Icon:</strong> Finding Islamic Knowledge<br><strong>⭐ Star:</strong> Islamic Excellence & Guidance</p>
     </div>
   </div>
 
   <main>
-    <p style="color:#345; margin:6px 0 18px 0; font-size: 14px;">🌙 Your gateway to authentic Islamic knowledge — Qur'an, Hadith, lectures, books, and trusted resources.</p>
+    <!-- WELCOME SECTION -->
+    <div style="background: linear-gradient(135deg, rgba(10, 106, 74, 0.08), rgba(21, 120, 80, 0.08)); padding: 20px; border-radius: 12px; margin-bottom: 24px; border-left: 6px solid #0a6a4a; position: relative; z-index: 10;">
+      <h2 style="margin-top: 0; color: #0a6a4a; font-size: 20px;">👋 Welcome to ISLAMIC GOOGLE</h2>
+      <p style="margin: 8px 0; color: #333; line-height: 1.6;">Your complete gateway to authentic Islamic knowledge. Search Qur'an, Hadith, lectures, books, and trusted Islamic resources all in one place.</p>
+    </div>
 
-    <!-- Featured Islamic Scholars & Channels -->
-    <div class="featured-section">
-      <h2>📺 Featured Islamic Scholars & Resources</h2>
-      <div class="channels-grid">
-        <div class="channel-card">
-          <a href="https://www.youtube.com/c/MuftiMenkOfficial" target="_blank">🎤 Mufti Menk</a>
+    <!-- STATISTICS SECTION -->
+    <div style="margin-bottom: 24px; position: relative; z-index: 10;">
+      <h3 style="color: #0a6a4a; margin-bottom: 16px; font-size: 18px;">📊 Islamic Resources Portal</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div style="font-size: 28px; margin-bottom: 8px;">📖</div>
+          <div class="stat-number">600+</div>
+          <div class="stat-label">Qur'an Verses</div>
         </div>
-        <div class="channel-card">
-          <a href="https://www.youtube.com/c/OmarSuleiman" target="_blank">🎤 Omar Suleiman</a>
+        <div class="stat-card">
+          <div style="font-size: 28px; margin-bottom: 8px;">📚</div>
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Hadith Collections</div>
         </div>
-        <div class="channel-card">
-          <a href="https://www.youtube.com/c/NoumanAliKhanOfficial" target="_blank">🎤 Nouman Ali Khan</a>
+        <div class="stat-card">
+          <div style="font-size: 28px; margin-bottom: 8px;">🎤</div>
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Video Lectures</div>
         </div>
-        <div class="channel-card">
-          <a href="https://www.youtube.com/c/YasirQadhiOfficial" target="_blank">🎤 Yasir Qadhi</a>
-        </div>
-        <div class="channel-card">
-          <a href="https://yaqeeninstitute.org/" target="_blank">📚 Yaqeen Institute</a>
-        </div>
-        <div class="channel-card">
-          <a href="https://www.youtube.com/c/IslamichubTV" target="_blank">🎥 IslamicHub</a>
+        <div class="stat-card">
+          <div style="font-size: 28px; margin-bottom: 8px;">🌍</div>
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Top Scholars</div>
         </div>
       </div>
     </div>
 
-    <!-- Search Bar -->
+    <!-- SEARCH BAR -->
     <form id="searchForm" class="searchbox" onsubmit="return false" role="search">
-      <input id="q" type="search" placeholder="Type keywords (e.g., 'Islamic history', 'Prophet Muhammad', 'Hadith on prayer')">
-      <button type="submit">Search</button>
+      <input id="q" type="search" placeholder="Search Islamic knowledge...">
+      <button type="submit">🔍 Search</button>
     </form>
 
-    <!-- Main Content Grid -->
-    <div style="display:flex; gap:16px; align-items:flex-start" class="grid-2">
+    <!-- FEATURED SECTION -->
+    <div class="featured-section" style="position: relative; z-index: 10;">
+      <h2 style="position: relative; z-index: 10;">📺 Featured Islamic Scholars</h2>
+      <div class="channels-grid">
+        <div class="channel-card"><a href="https://www.youtube.com/c/MuftiMenkOfficial" target="_blank">🎤 Mufti Menk</a></div>
+        <div class="channel-card"><a href="https://www.youtube.com/c/OmarSuleiman" target="_blank">🎤 Omar Suleiman</a></div>
+        <div class="channel-card"><a href="https://www.youtube.com/c/NoumanAliKhanOfficial" target="_blank">🎤 Nouman Ali Khan</a></div>
+        <div class="channel-card"><a href="https://www.youtube.com/c/YasirQadhiOfficial" target="_blank">🎤 Yasir Qadhi</a></div>
+        <div class="channel-card"><a href="https://yaqeeninstitute.org/" target="_blank">📚 Yaqeen Institute</a></div>
+        <div class="channel-card"><a href="https://www.youtube.com/c/IslamichubTV" target="_blank">🎥 IslamicHub</a></div>
+      </div>
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <div style="position: relative; z-index: 10;">
+      <h3 style="color: #0a6a4a; margin: 24px 0 16px 0; font-size: 18px;">🎬 Featured Video Lectures</h3>
+      <div class="video-gallery">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/m9xcwWBwXkc?modestbranding=1&rel=0" allowfullscreen loading="lazy"></iframe>
+          <div class="video-info">
+            <h4 class="video-title">Mufti Menk - Spiritual Reminder</h4>
+            <a href="https://www.youtube.com/watch?v=m9xcwWBwXkc" target="_blank" class="video-link">Watch on YouTube →</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/_7WjdRTCv6I?modestbranding=1&rel=0" allowfullscreen loading="lazy"></iframe>
+          <div class="video-info">
+            <h4 class="video-title">Nouman Ali Khan - Understanding Qur'an</h4>
+            <a href="https://www.youtube.com/watch?v=_7WjdRTCv6I" target="_blank" class="video-link">Watch on YouTube →</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/1UJk3GXyQK0?modestbranding=1&rel=0" allowfullscreen loading="lazy"></iframe>
+          <div class="video-info">
+            <h4 class="video-title">Omar Suleiman - Mercy of the Prophet</h4>
+            <a href="https://www.youtube.com/watch?v=1UJk3GXyQK0" target="_blank" class="video-link">Watch on YouTube →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT GRID -->
+    <div style="display: grid; grid-template-columns: 1fr 320px; gap: 20px; margin-top: 24px; position: relative; z-index: 10;">
       <div>
-        <!-- Category Filter Buttons -->
-        <div style="display:flex; gap:8px; margin-bottom:16px; flex-wrap: wrap;">
+        <!-- CATEGORY FILTER -->
+        <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
           <button data-cat="Qur'an" class="category-badge">📖 Qur'an</button>
           <button data-cat="Hadith" class="category-badge">📚 Hadith</button>
           <button data-cat="Lecture" class="category-badge">🎤 Lectures</button>
@@ -283,58 +160,42 @@
           <button data-cat="Article" class="category-badge">📰 Articles</button>
         </div>
 
-        <!-- Video Gallery Section -->
-        <h3 style="color: #0a6a4a; margin: 20px 0 12px 0;">🎬 Featured Video Lectures</h3>
-        <div class="video-gallery">
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/m9xcwWBwXkc?modestbranding=1" allowfullscreen></iframe>
-            <div class="video-info">
-              <h4 class="video-title">Mufti Menk - Reminder</h4>
-              <a href="https://www.youtube.com/watch?v=m9xcwWBwXkc" target="_blank" class="video-link">Watch on YouTube →</a>
-            </div>
-          </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/_7WjdRTCv6I?modestbranding=1" allowfullscreen></iframe>
-            <div class="video-info">
-              <h4 class="video-title">Nouman Ali Khan - Qur'an</h4>
-              <a href="https://www.youtube.com/watch?v=_7WjdRTCv6I" target="_blank" class="video-link">Watch on YouTube →</a>
-            </div>
-          </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/1UJk3GXyQK0?modestbranding=1" allowfullscreen></iframe>
-            <div class="video-info">
-              <h4 class="video-title">Omar Suleiman - Mercy</h4>
-              <a href="https://www.youtube.com/watch?v=1UJk3GXyQK0" target="_blank" class="video-link">Watch on YouTube →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Search Results -->
-        <h3 style="color: #0a6a4a; margin: 24px 0 12px 0;">📚 Resources</h3>
+        <!-- SEARCH RESULTS -->
+        <h3 style="color: #0a6a4a; margin: 0 0 16px 0; font-size: 18px;">📚 Resources</h3>
         <div id="results" class="results">
-          <div class="result-card"><p>💡 Type a search term above or click a category to see results.</p></div>
+          <div class="result-card"><p>💡 Select a category or type a search term to view resources.</p></div>
         </div>
       </div>
 
-      <!-- Sidebar -->
+      <!-- SIDEBAR -->
       <aside class="sidebar">
-        <div class="card" style="box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.1)';">
-          <h3>🌟 Quick Access</h3>
-          <ul style="padding-left:16px; margin:8px 0 0 0; font-size: 13px;">
-            <li style="margin: 6px 0;"><a href="https://quran.com" target="_blank" style="color: #0a6a4a; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#157850'; this.style.textDecoration='underline';" onmouseout="this.style.color='#0a6a4a'; this.style.textDecoration='none';">Quran.com</a></li>
-            <li style="margin: 6px 0;"><a href="https://sunnah.com" target="_blank" style="color: #0a6a4a; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#157850'; this.style.textDecoration='underline';" onmouseout="this.style.color='#0a6a4a'; this.style.textDecoration='none';">Sunnah.com</a></li>
-            <li style="margin: 6px 0;"><a href="https://islamqa.info" target="_blank" style="color: #0a6a4a; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#157850'; this.style.textDecoration='underline';" onmouseout="this.style.color='#0a6a4a'; this.style.textDecoration='none';">IslamQA</a></li>
-            <li style="margin: 6px 0;"><a href="https://kalamullah.com" target="_blank" style="color: #0a6a4a; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='#157850'; this.style.textDecoration='underline';" onmouseout="this.style.color='#0a6a4a'; this.style.textDecoration='none';">Kalamullah</a></li>
+        <!-- QUICK ACCESS -->
+        <div class="card">
+          <h3>⚡ Quick Access</h3>
+          <ul style="padding-left: 16px; margin: 8px 0 0 0; font-size: 13px;">
+            <li style="margin: 8px 0;"><a href="https://quran.com" target="_blank">Quran.com</a></li>
+            <li style="margin: 8px 0;"><a href="https://sunnah.com" target="_blank">Sunnah.com</a></li>
+            <li style="margin: 8px 0;"><a href="https://islamqa.info" target="_blank">IslamQA</a></li>
+            <li style="margin: 8px 0;"><a href="https://yaqeeninstitute.org" target="_blank">Yaqeen</a></li>
           </ul>
         </div>
-        
-        <div style="height:12px"></div>
-        
-        <div class="card" style="box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.1)';">
-          <h3 style="color: #157850; margin: 0 0 10px 0;">📖 Today's Reminder</h3>
+
+        <!-- DAILY REMINDER -->
+        <div class="card">
+          <h3>🌙 Daily Reminder</h3>
           <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #333;">
-            "Indeed, with hardship comes ease." <br>
-            <em style="color: #666; font-size: 11px;">— Qur'an 94:5</em>
+            "Indeed, with hardship comes ease." 
+            <br><em style="color: #666; font-size: 11px; display: block; margin-top: 6px;">— Qur'an 94:5</em>
+          </p>
+        </div>
+
+        <!-- HELP & SUPPORT -->
+        <div class="card">
+          <h3>🆘 Need Help?</h3>
+          <p style="margin: 0; font-size: 13px; color: #333; line-height: 1.6;">
+            Have questions? 
+            <a href="contact.html" style="color: #0a6a4a; font-weight: 700; text-decoration: none;">Contact us</a>
+            or visit our support page.
           </p>
         </div>
       </aside>
@@ -342,28 +203,28 @@
   </main>
 
   <footer>
-    <div>CREATED BY <strong>SULEIMAN ALHASSAN</strong></div>
-    <div>May Allah accept this sadaqah jariyah</div>
+    <div>✨ CREATED BY <strong>SULEIMAN ALHASSAN</strong></div>
+    <div>📖 May Allah accept this sadaqah jariyah</div>
   </footer>
 </div>
 
 <script src="js/search.js"></script>
 <script>
-  // Logo Modal Functions
   function openLogoModal() {
     document.getElementById('logoModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
   }
   function closeLogoModal() {
     document.getElementById('logoModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
   }
   window.onclick = function(event) {
     const modal = document.getElementById('logoModal');
     if (event.target === modal) {
-      modal.style.display = 'none';
+      closeLogoModal();
     }
   }
-  
-  // Visitor notification via Getform
+  // Visitor tracking
   (function(){
     var ENDPOINT = "https://getform.io/f/akkpdyla";
     var payload = { _subject: "Islamic Google - Visitor", page: location.pathname, ts: new Date().toISOString() };
