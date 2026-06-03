@@ -1,18 +1,134 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lecture Resources — ISLAMIC GOOGLE</title><link rel="stylesheet" href="styles.css"></head>
-<body><div class="wrap">
-<header><div class="logo"><img src="assets/logo.svg" alt="logo"></div><h1>Lecture Resources</h1><nav>
-<a href="index.html">Home</a><a href="quran.html">Qur'an</a><a href="hadith.html">Hadith</a><a href="lectures.html">Lectures</a><a href="books.html">Books</a><a href="history.html">History</a><a href="contact.html">Contact</a>
-</nav></header>
-<main>
-  <p>Showing resources for category: <strong>Lecture</strong></p>
-  <div id="results" class="results"></div>
-</main>
-<footer><div>CREATED BY <strong>SULEIMAN ALHASSAN</strong></div><div>May Allah accept this sadaqah jariyah</div></footer>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Islamic Lectures & Scholars — ISLAMIC GOOGLE</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .scholar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .scholar-card {
+      background: white;
+      border: 1px solid #eef6f3;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+    .scholar-card h3 {
+      margin: 8px 0;
+      color: #0a6a4a;
+    }
+    .scholar-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #0a6a4a;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .scholar-card a:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><img src="assets/logo.svg" alt="logo"></div>
+    <h1>Islamic Lectures & Scholars</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quran.html">Qur'an</a>
+      <a href="hadith.html">Hadith</a>
+      <a href="books.html">Books</a>
+      <a href="history.html">History</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Learn from Authentic Islamic Scholars</h2>
+    <p>Access lectures and resources from renowned Islamic scholars worldwide.</p>
+
+    <div class="scholar-grid">
+      <div class="scholar-card">
+        <h3>🎤 Mufti Menk</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Contemporary Islamic scholar known for accessible reminders and lectures.</p>
+        <a href="https://www.youtube.com/c/MuftiMenkOfficial" target="_blank">→ YouTube Channel</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>🎤 Omar Suleiman</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Founder of Yaqeen Institute, specializing in Islamic spirituality and seerah.</p>
+        <a href="https://www.youtube.com/c/OmarSuleiman" target="_blank">→ YouTube Channel</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>🎤 Nouman Ali Khan</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Renowned Qur'an interpreter and founder of Bayyinah Institute.</p>
+        <a href="https://www.youtube.com/c/NoumanAliKhanOfficial" target="_blank">→ YouTube Channel</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>🎤 Yasir Qadhi</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Islamic scholar specializing in Islamic history and theology.</p>
+        <a href="https://www.youtube.com/c/YasirQadhiOfficial" target="_blank">→ YouTube Channel</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>🎤 Dawud Adib</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Provides daily Islamic reminders and motivational talks.</p>
+        <a href="https://www.youtube.com/c/DawudAdib" target="_blank">→ YouTube Channel</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>📚 Yaqeen Institute</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Research-based articles and resources on Islam and contemporary issues.</p>
+        <a href="https://yaqeeninstitute.org/" target="_blank">→ Visit Website</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>🎥 IslamicHub</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Comprehensive channel with lectures from multiple Islamic scholars.</p>
+        <a href="https://www.youtube.com/c/IslamichubTV" target="_blank">→ YouTube Channel</a>
+      </div>
+
+      <div class="scholar-card">
+        <h3>🌐 Muslim Central</h3>
+        <p style="margin: 8px 0; color: #666; font-size: 13px;">Central hub connecting to Islamic resources and scholar content.</p>
+        <a href="https://www.muslimcentral.com/" target="_blank">→ Visit Website</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>CREATED BY <strong>SULEIMAN ALHASSAN</strong></div>
+    <div>May Allah accept this sadaqah jariyah</div>
+  </footer>
 </div>
-<script src="js/search.js"></script>
+
 <script>
-document.addEventListener('DOMContentLoaded', async function(){ await loadIndex(); showCategory('Lecture'); });
+  (function(){
+    var ENDPOINT = "https://getform.io/f/akkpdyla";
+    var payload = { _subject: "Islamic Google - Visitor", page: location.pathname, ts: new Date().toISOString() };
+    try{
+      var last = localStorage.getItem('ig_last_notify') || 0;
+      var now = Date.now();
+      if(!last || (now - parseInt(last)) > (10*60*1000)){
+        fetch(ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)})
+          .then(function(){ localStorage.setItem('ig_last_notify', now.toString()); })
+          .catch(function(){});
+      }
+    }catch(e){}
+  })();
 </script>
-</body></html>
+</body>
+</html>
