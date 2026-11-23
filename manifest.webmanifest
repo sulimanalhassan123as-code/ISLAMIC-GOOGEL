@@ -1,0 +1,14 @@
+{
+  "name": "Islamic Google — Gateway to Islamic Knowledge",
+  "short_name": "Islamic Google",
+  "description": "Search the Qur'an, authentic hadith, duas and 99 Names, check prayer times and qibla, and find verified Islamic resources.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080f1a",
+  "theme_color": "#0b1220",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
